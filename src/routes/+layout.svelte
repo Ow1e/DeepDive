@@ -17,9 +17,6 @@
     <svelte:fragment slot="skip-to-content">
         <SkipToContent />
     </svelte:fragment>
-    <HeaderNav>
-        <HeaderNavItem href="/" text="Source Code" />
-    </HeaderNav>
 </Header>
 
 <div style="display: flex; height: 100vh;">

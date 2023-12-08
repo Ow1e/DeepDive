@@ -6,7 +6,7 @@
 
     onMount(() => {
         scenceNum.set(4);
-        lockRotate.set(Math.PI / 5);
+        lockRotate.set(Math.PI / 1.9);
     });
 </script>
 
