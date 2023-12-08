@@ -37,8 +37,10 @@
         <br />
         <h1>Made with</h1>
         <br />
-        <img src="/imgs/sveltekit.png" style="width: 60%; margin-top: 1rem; margin-bottom: 1rem;" alt="Svelte">
+        <img src="/imgs/sveltekit.png" style="width: 50%; margin-top: 1rem; margin-bottom: 1rem;" alt="Svelte">
         <img src="/imgs/three.png" style="width: 50%; margin-top: 1rem; margin-bottom: 1rem;" alt="Three.js">
         <img src="/imgs/ts.png" style="width: 50%; margin-top: 1rem; margin-bottom: 1rem;" alt="TypeScript">
+        <br />
+        <p>Most of this I did without external tools, like the atomic modals, web design and dynamic animations between pages.</p>
     </div>
 </Content>

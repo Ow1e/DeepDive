@@ -51,7 +51,7 @@ rotationSpeed={1}
 </Float>
 </T.Group>
 
-<Grid sectionColor="#0f62fe" />
+<Grid sectionColor="#0f62fe" cellColor="#0f62fe" />
 
 {#if $scenceNum == 1}
   <Scene1 />
