@@ -13,12 +13,7 @@
     </Canvas>
     {:else}
     <div style="padding:1rem;overflow-y:auto; overflow-y: auto;">
-        <br />
-        <br />
-        A cool video I reccomend that applies electronegativity :)
-        <br />
-        <br />
-        <iframe src="https://www.youtube.com/embed/l2Pll0V4HdM" style="width: 100%;aspect-ratio:16/9;" title="How your split ends can help clean oil spills" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe style="width:100%;aspect-ratio:16/9;" src="https://www.youtube.com/embed/PVL24HAesnc" title="Polar &amp; Non-Polar Molecules: Crash Course Chemistry #23" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     {/if}
 </Content>

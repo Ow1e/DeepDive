@@ -3,16 +3,20 @@
     import { Content, Accordion, AccordionItem, Button } from "carbon-components-svelte";
 	import { onMount } from "svelte";
     import ArrowRight from "carbon-icons-svelte/lib/ArrowRight.svelte";
+    import ListCheckedMirror from "carbon-icons-svelte/lib/ListCheckedMirror.svelte";
+    import QuizModals from "$lib/QuizModals.svelte";
 
     onMount(() => {
         scenceNum.set(4);
-        lockRotate.set(Math.PI / 1.9);
+        lockRotate.set(Math.PI / 1.3);
     });
+
+    let open = false;
 </script>
 
 <Content style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding: 1rem; padding-top: 4rem; overflow-y: auto;">
     <div>
-        <h1>Symetry!</h1>
+        <h1>Symmetry!</h1>
         <br />
         <img src="/imgs/shapes.jpg" style="width: 70%; margin-top: 1rem; margin-bottom: 1rem;" alt="Shapes">
         <br />
@@ -23,5 +27,10 @@
             Intermoecular forces also bend the shape of the compound, so you will need to check your bond polarity and shape too.
         </p>
     </div>
-    <Button kind="primary" style="align-self: flex-start;" icon={ArrowRight} href="/finish">Finish</Button>
+    <div style="align-self: flex-start;">
+        <Button kind="primary" style="" icon={ListCheckedMirror} on:click={() => (open = true)}>Complete Quiz</Button>    
+        <Button kind="secondary" style="align-self: flex-start;" icon={ArrowRight} href="/finish">Finish</Button>
+    </div>
 </Content>
+
+<QuizModals bind:open={open} />
