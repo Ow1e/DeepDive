@@ -1,12 +1,12 @@
 <script lang="ts">
     import { T, useTask } from '@threlte/core'
-    import { Grid, OrbitControls, Text } from '@threlte/extras'
+    import { Grid, OrbitControls, Float } from '@threlte/extras'
     import { lockRotate, scenceNum } from '$lib/globals';
     import Scene1 from '$lib/3d/Scene1.svelte';
     import Scene2 from '$lib/3d/Scene2.svelte';
     import Scene3 from '$lib/3d/Scene3.svelte';
     import { tweened } from 'svelte/motion'; // Import tweened
-	import Scene4 from './Scene4.svelte';
+	  import Scene4 from './Scene4.svelte';
 
     let zoom = 45
 
@@ -32,6 +32,10 @@
 </script>
   
 <T.Group rotation.y={$rotation.y}>  <!-- Use the $ prefix to get the current value -->
+<Float 
+rotationIntensity={0.5}
+rotationSpeed={1}
+>
     <T.OrthographicCamera
       bind:zoom
       position={$cameraPosition}
@@ -44,6 +48,7 @@
   </T.OrthographicCamera>
   <T.DirectionalLight position={[0, 10, 5]} intensity={1.5} />
   <T.AmbientLight intensity={0.7} />
+</Float>
 </T.Group>
 
 <Grid sectionColor="#0f62fe" />

@@ -18,7 +18,7 @@
         </p>
         <br />
         <h3>
-            Resources
+            Resources I used and reccomend:
         </h3>
         <br />
         <UnorderedList>
