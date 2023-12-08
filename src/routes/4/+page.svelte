@@ -8,7 +8,7 @@
 
     onMount(() => {
         scenceNum.set(4);
-        lockRotate.set(Math.PI / 1.3);
+        lockRotate.set(-1);
     });
 
     let open = false;

@@ -13,6 +13,9 @@
     </Canvas>
     {:else}
     <div style="padding:1rem;overflow-y:auto; overflow-y: auto;">
+        <p>If your more curious I heavly reccomend this video :)</p>
+        <br />
+        <br />
         <iframe style="width:100%;aspect-ratio:16/9;" src="https://www.youtube.com/embed/PVL24HAesnc" title="Polar &amp; Non-Polar Molecules: Crash Course Chemistry #23" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     {/if}
